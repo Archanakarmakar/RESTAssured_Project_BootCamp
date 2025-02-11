@@ -1,0 +1,15 @@
+03:02:27.286 [main] INFO  userAPI.test.UserAPI - -------------Setting up the User Details---------
+03:02:27.292 [main] INFO  userAPI.test.UserAPI - -------Delete User By ID-------------
+03:02:27.633 [main] INFO  userAPI.test.UserAPI - ---------Deleted User By ID Successfully-------
+03:02:27.633 [main] INFO  userAPI.test.UserAPI - -------------Setting up the User Details---------
+03:02:27.634 [main] INFO  userAPI.test.UserAPI - -------Delete User By ID-------------
+03:02:27.981 [main] INFO  userAPI.test.UserAPI - ---------Deleted User By ID Successfully-------
+03:02:27.982 [main] INFO  userAPI.test.UserAPI - -------------Setting up the User Details---------
+03:02:27.985 [main] INFO  userAPI.test.UserAPI - -------Delete User By ID-------------
+03:02:28.336 [main] INFO  userAPI.test.UserAPI - ---------Deleted User By ID Successfully-------
+03:02:28.337 [main] INFO  userAPI.test.UserAPI - -------------Setting up the User Details---------
+03:02:28.338 [main] INFO  userAPI.test.UserAPI - -------Delete User By ID-------------
+03:02:28.686 [main] INFO  userAPI.test.UserAPI - ---------Deleted User By ID Successfully-------
+03:02:28.688 [main] INFO  userAPI.test.UserAPI - -------------Setting up the User Details---------
+03:02:28.689 [main] INFO  userAPI.test.UserAPI - -------Delete User By ID-------------
+03:02:29.032 [main] INFO  userAPI.test.UserAPI - ---------Deleted User By ID Successfully-------

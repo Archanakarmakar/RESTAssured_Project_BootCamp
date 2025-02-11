@@ -1,0 +1,742 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>105/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 11 03:01:31 CST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>58 seconds (58022 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUserWithMandatoryDetails()'><b>testPostUserWithMandatoryDetails</b><br>Test class: userAPI.test.UserAPI</td>
+<td><div><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testPostUserWithMandatoryDetails] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:445)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:702)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2049213736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2049213736'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testPostUserWithMandatoryDetails] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:445)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:702)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByFirstName()'><b>DeleteUserByFirstName</b><br>Test class: userAPI.test.UserAPI</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void userAPI.test.UserAPI.DeleteUserByFirstName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: DeleteUserByFirstName([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6])
+Arguments: [(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) 200,(java.lang.String) Valid User FirstName(401)]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:918)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace740793579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace740793579'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void userAPI.test.UserAPI.DeleteUserByFirstName(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: DeleteUserByFirstName([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6])
+Arguments: [(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) 200,(java.lang.String) Valid User FirstName(401)]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:918)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 86257694087, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Contact number(more than 10 digits)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, Invalid, , JOHNn, Danny, 9511139356, myteam07trial33@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 401, Invalid Auth username</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: , users, username, 200, OK, , , Valid</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139348, myteam07trial25@gmail.com, 19-a, Lincoln Dr, Wisco@$$, USA, 53151, 400, Invalid State(only string  with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 86257694087, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, Contact number(more than 10 digits)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139341, myteam07trial18@gmail.com, 109894, Lincoln Dr, Wisconsin, USA, 53151, 400, Invalid Plot Number(onlynumbers)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769097, updateTry123@gmail.com, 18-a, Madison street, Texan@##, USA, 45656, 400, Invalid State(only string  with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769095, updateTry123@gmail.com, 18-a, , Texas, USA, 45656, 400, Invalid Street (Empty Field)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHNintegral, users, username, 404, Not Found, , , Non-existing Firstname</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, noAuth, , JOHNtest, TeamOne, 8625869390, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 401, Without auth</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: user, 11026, application/json, , , JOHNtest, TeamOne, 8625769104, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 405, Invalid METHOD</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, Invalid, , JOHNtest, TeamOne, 8625869390, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 401, Invalid Auth Username</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: abbbac, 400, Bad Request, , , AlphanumericId</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769102, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, abcd, 400, Invalid Zipcode(only String)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, null, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, Contact number(NULL)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139344, myteam07trial21@gmail.com, 19-a, Lincoln Dr234, Wisconsin, USA, 53151, 400, Invalid Street (only numbers with  alpha numberic)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, "", updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Contact number(NULL)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 8511139341, myteam07trial17@gmail.com, , Lincoln Dr, Wisconsin, USA, 53151, 400, Empty Plot number</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuseers, , application/json, , , JOHNtest, TeamOne, 8625869391, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 404, Without User ID</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Team1234, 8511139341, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, LastName(AlphaNumberic)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769090, updateTry123@gmail.com, 109894, Madison street, Texas, USA, 45656, 400, Invalid Plot Number(onlynumbers)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testGetAllUsers()'><b>testGetAllUsers</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 401, Unauthorized, Invalid, , Invalid Auth Username </td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 345866, application/json, , , JOHNtest, TeamOne, 8625869391, updateTry123@gmail.com, Pl-89, Madison street, Texas, USA, 65478, 404, Non-Existing User ID</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testGetAllUsers()'><b>testGetAllUsers</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 200, OK, , , Valid</td>
+<td></td>
+<td>4</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, myuser, usernames, 404, Not Found, , , Invalid Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, , 8511139341, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, without LastName</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , , TeamOne, 8625869394, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Missing firstName</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769094, updateTry123@gmail.com, 18-a, Clausn@@, Texas, USA, 45656, 400, Invalid Street(only string  with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 86269087, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Contact number(less than 10 digits)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 12457, 401, Unauthorized, , Invalid, Invalid Auth pwd </td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, , myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, Contact number(without)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testGetAllUsers()'><b>testGetAllUsers</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 401, Unauthorized, noAuth, , Without Auth</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769101, updateTry123@gmail.com, 18-a, Madison street, Texas, , 45656, 400, Invalid country (Empty)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: , 11026, , , 404, Without Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 86269087, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, Contact number(less than 10 digits)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: user, 11026, , , 405, Invalid Method for GET BY ID Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHNn, Danny, 9511139359, , 19-a, Lincoln Dr, Wisconsin, USA, , 400, Without ZIP (Empty)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, users, username, 401, Unauthorized, Invalid, , Invalid Auth Username </td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769099, updateTry123@gmail.com, 18-a, Madison street, Texas, USA34, 45656, 400, Invalid country  (Num With Alpha numeric)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN2434!, users, username, 404, Not Found, , , AlphaNumeric Firstname</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769091, updateTry123@gmail.com, sgfd, Madison street, Texas, USA, 45656, 400, Invalid Plot Number(onlyString)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, deleteuser, username, 405, Method Not Allowed, , , Invalid METHOD</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, Testing1234, 8625869395, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Invalid LastName</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, , , 404, Not Found, , , Without Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139350, myteam07trial27@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA123, 53151, 400, Invalid country  (Num With Alpha numeric)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139353, myteam07trial30@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, ZIP, 400, Invalid Zipcode(only String)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deleteuser, , noAuth, , 401, Without Auth</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769096, updateTry123@gmail.com, 18-a, Madison street, Texan456, USA, 45656, 400, Invalid State(only numbers with  alpha numberic)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, users, username, 401, Unauthorized, , Invalid, Invalid Auth pwd </td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769088, jersygmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Invalid Email</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deleteuser, 545677, , , 404, InValid UserId</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, myuser, username, 404, Not Found, , , Invalid Path Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139347, myteam07trial24@gmail.com, 19-a, Lincoln Dr, WIS123, USA, 53151, 400, Invalid State( alpha numberic)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 8511139341, , 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, without EMail</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , , Danny, 9511139355, myteam07trial32@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, without firstName</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769093, updateTry123@gmail.com, 18-a, Cau6789, Texas, USA, 45656, 400, Invalid Street (only numbers with  alpha numberic)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deleteuser, , Invalid, , 401, Invalid auth Username</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 5770589549, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Existing Contact number</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: alphabet, 400, Bad Request, , , Invalid Alphabet id</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139345, myteam07trial22@gmail.com, 19-a, Lincon$$ Drive, Wisconsin, USA, 53151, 400, Invalid Street(only string  with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769100, updateTry123@gmail.com, 18-a, Madison street, Texas, usa$$, 45656, 400, Invalid country (Num with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769092, updateTry123@gmail.com, 19a, Madison street, Texas, USA, 45656, 400, Invalid Plot Number(without-)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, , application/json, , , UpdatedName, TeamOne, , , Pl-89, Madison street, Texas, USA, 65478, 200,  VALID</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 12457, 200, OK, , , Valid</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769098, updateTry123@gmail.com, 18-a, Madison street, , USA, 45656, 400, Invalid state(Empty)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: JOHN, users, username, 401, Unauthorized, noAuth, , Without Auth</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuseers, 11026, application/json, , , JOHNtest, TeamOne, 8625869391, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 404, invalid Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, Testing, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, Contact number (String)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 8511139341, Dennygmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, Invalid Email</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139346, myteam07trial23@gmail.com, 19-a, , Wisconsin, USA, 53151, 400, Invalid Street (Empty Field)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, , updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Contact number(without)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deleteuser, , , Invalid, 401, Invalid auth pwd</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testGetAllUsers()'><b>testGetAllUsers</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 401, Unauthorized, , Invalid, Invalid Auth pwd </td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139352, myteam07trial29@gmail.com, 19-a, Lincoln Dr, Wisconsin, , 53151, 400, Invalid country (Empty)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769104, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, , 400, Invalid ZIP (Empty)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , Invalid, JOHNtest, TeamOne, 8625869390, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 401, Invalid Auth Password</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139343, myteam07trial20@gmail.com, 19a, Lincoln Dr, Wisconsin, USA, 53151, 400, Invalid Plot Number(without-)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , Invalid, JOHNn, Danny, 9511139357, myteam07trial34@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 401, Invalid Auth password</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, noAuth, , JOHNn, Danny, 9511139358, myteam07trial35@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 401, Invalid Auth username and password</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 5436546, users, username, 404, Not Found, , , Numeric Firstname</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, , 8625869396, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Missing LastName</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deleteuser, dsgf3465, , , 400, Alphanumeric UserId</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deleteuser, , , , 200, Valid User ID</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 8625769087, myteam07trial07@gmail.com, Pl-23, Lincoln Dr, Wisconsin, USA, 53151, 409, Existing Contact number</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , Rob123, TeamOne, 8625869393, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Invalid firstName</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN234, Danny, 8511139341, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, FirstName(Alpha Numberic)</td>
+<td></td>
+<td>1</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 12457, 401, Unauthorized, Invalid, , Invalid Auth Username </td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.DeleteUserByID()'><b>DeleteUserByID</b><br>Test class: userAPI.test.UserAPI<br>Parameters: deluser, 11026, , , 404, Invalid Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserByFirstName()'><b>GetUserByFirstName</b><br>Test class: userAPI.test.UserAPI<br>Parameters: , users, username, 404, Not Found, , , Without Firstname</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , John@123, Danny, 8511139341, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, FirstName(spl Char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 8511139341, Numpy@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 409, Existing Email ID</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139342, myteam07trial19@gmail.com, sgfd, Lincoln Dr, Wisconsin, USA, 53151, 400, Invalid Plot Number(onlyString)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769088, , 18-a, Madison street, Texas, USA, 45656, 400, without EMail</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 12457, 401, Unauthorized, noAuth, , Without Auth</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769089, updateTry123@gmail.com, , Madison street, Texas, USA, 45656, 400, Empty Plot number</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769088, Numpy@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Existing Email ID</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, 8625769103, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45@@, 400, Invalid Zipcode(string with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139349, myteam07trial26@gmail.com, 19-a, Lincoln Dr, , USA, 53151, 400, Invalid state(Empty)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Team$$%*, 8511139341, myteam07trial07@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, 53151, 400, LastName(SpecialChar)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: , 11026, application/json, , , JOHNtest, TeamOne, 8625869392, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 404, Missing Endpoint</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139354, myteam07trial31@gmail.com, 19-a, Lincoln Dr, Wisconsin, USA, zip$$, 400, Invalid Zipcode(string with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , Daniel, Dannytimee, 4578352477, helloworld7777@gmail.com, 19-ab, Lincoln Dr, Wisconsin, USA, 56151, 201, Valid Data</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.UpdateUserById()'><b>UpdateUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: updateuser, 11026, application/json, , , JOHNtest, TeamOne, Testing, updateTry123@gmail.com, 18-a, Madison street, Texas, USA, 45656, 400, Contact number (String)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.GetUserById()'><b>GetUserById</b><br>Test class: userAPI.test.UserAPI<br>Parameters: 99911, 404, Not Found, , , Non-existing  Id</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+<tr>
+<td title='userAPI.test.UserAPI.testPostUser()'><b>testPostUser</b><br>Test class: userAPI.test.UserAPI<br>Parameters: application/json, , , JOHN, Danny, 9511139351, myteam07trial28@gmail.com, 19-a, Lincoln Dr, Wisconsin, UA$$, 53151, 400, Invalid country (Num with spl char)</td>
+<td></td>
+<td>0</td>
+<td>userAPI.test.UserAPI@69c43e48</td></tr>
+</table><p>
+</body>
+</html>
